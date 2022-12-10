@@ -29,7 +29,7 @@ function fillColor() {
 function drawNewGrid() {
     let square = prompt("Enter the number of squares per side limit (1-100)", 16);
     
-    if(!(square <= 100)) return;
+    if(!(square <= 100) || !square) return;
     let numberOfSquares = parseInt(square);
     
     let squareLength = 640/numberOfSquares;
