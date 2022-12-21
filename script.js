@@ -1,6 +1,6 @@
 const container = document.querySelector('#container');
 
-drawGrid(40,16);
+drawGrid(26.6666,24);
 
 const button = document.querySelector('.button');
 button.addEventListener('click', drawNewGrid);
@@ -27,7 +27,7 @@ function fillColor() {
 }
 
 function drawNewGrid() {
-    let square = prompt("Enter the number of squares per side limit (1-50)", 16);
+    let square = prompt("Enter the number of squares per side limit (1-50)", 24);
     
     if(!(square <= 50) || !square) return;
     let numberOfSquares = parseInt(square);
