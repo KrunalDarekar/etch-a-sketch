@@ -27,9 +27,9 @@ function fillColor() {
 }
 
 function drawNewGrid() {
-    let square = prompt("Enter the number of squares per side limit (1-100)", 16);
+    let square = prompt("Enter the number of squares per side limit (1-50)", 16);
     
-    if(!(square <= 100) || !square) return;
+    if(!(square <= 50) || !square) return;
     let numberOfSquares = parseInt(square);
     
     let squareLength = 640/numberOfSquares;
