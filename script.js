@@ -1,4 +1,25 @@
+const DefaultColor = '#333333'
+const DefaultSize = 24
+
+let currentColor = DefaultColor
+let currentSize = DefaultSize
+
+function setCurrentColor(newColor) {
+  currentColor = newColor
+}
+
+function setCurrentSize(newSize) {
+  currentSize = newSize
+}
+
+const colorPicker = document.getElementById('colorPicker');
+const eraserBtn = document.getElementById('eraserBtn');
+const clearBtn = document.getElementById('clearBtn');
+const sizeValue = document.getElementById('sizeValue');
+const sizeSlider = document.getElementById('sizeSlider');
 const container = document.querySelector('#container');
+
+colorPicker.oninput = (e) => setCurrentColor(e.target.value);
 
 drawGrid(26.6666,24);
 
@@ -23,7 +44,7 @@ function drawGrid(squareLength,numberOfSquares) {
 }
 
 function fillColor() {
-    this.style.background = 'black';
+    this.style.background = currentColor;
 }
 
 function drawNewGrid() {
