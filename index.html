@@ -12,9 +12,15 @@
     <header>
         <h1>Pixetch</h1>
     </header>
-
-    <div id="container">
-
+    <div class="main">
+        <div class="settings">
+            <input id="colorPicker" type="color" value="#333333">
+            <button id="eraserBtn">Eraser</button>
+            <button id="clearBtn">Clear</button>
+            <div id="sizeValue">16 x 16</div>
+            <input id="sizeSlider" type="range" value="24" min="8" max="50">
+        </div>
+        <div id="container"></div>
     </div>
 </body>
 </html>
