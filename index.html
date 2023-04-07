@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
+        <img src="favicon.png" alt="">
         <h1>Pixetch</h1>
     </header>
     <div class="main">
         <div class="settings">
             <input id="colorPicker" type="color" value="#333333">
-            <button id="eraserBtn">Eraser</button>
             <button id="clearBtn">Clear</button>
-            <div id="sizeValue">16 x 16</div>
+            <div id="sizeValue">24 x 24</div>
             <input id="sizeSlider" type="range" value="24" min="8" max="50">
         </div>
         <div id="container"></div>
